@@ -1,34 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comunicado Importante</title>
-
-  <!-- Open Graph para WhatsApp -->
-  <meta property="og:title" content="Comunicado de Andrea" />
-  <meta property="og:description" content="Te invito a mi retiro urbano de primavera. Tocá para verlo 👇" />
-  <meta property="og:image" content="https://funfely.github.io/flyerada/assets/imagen.jpeg" />
-  <meta property="og:url" content="https://funfely.github.io/flyerada/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flyer Activista del Alma</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      gap: 20px;
+      padding: 20px;
+      /* Gradiente cálido (rosado → naranja) */
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 30%, #fda085 100%);
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #5a2a27;
+      text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
+    }
+    video, img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    .cta-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+    .cta-btn {
+      display: block;
+      text-align: center;
+      background: #e63946;
+      color: #fff;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+    .cta-btn:hover {
+      background: #b21f35;
+      transform: translateY(-2px);
+    }
+  </style>
 </head>
-<body style="font-family: Arial, Helvetica, sans-serif; max-width: 640px; margin: auto; padding: 20px; line-height: 1.6;">
-  <h2>Comunicado Importante</h2>
-  <p>
-    RENACER — Retiro urbano de Primavera<br>
-    📅 Fecha: 21 de septiembre, de 12 a 19 hs<br>
-    🙋 Facilita: Andrea Moyano<br>
-    📍 Espacio Eluney — Los Acantilados
-  </p>
+<body>
+  <h1>Flyer Activista del Alma</h1>
 
-  <video width="100%" controls preload="metadata" poster="assets/imagen.jpeg">
-    <source src="assets/retiroandre.mp4" type="video/mp4">
-    Tu navegador no soporta la reproducción de video.
+  <!-- Video -->
+  <video controls autoplay loop muted>
+    <source src="./assets/retiroandre.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5.
   </video>
 
-  <p>Gracias por verlo 🙌</p>
+  <!-- Imagen -->
+  <img src="./assets/Imagen.jpeg" alt="Flyer Activista del Alma">
+
+  <!-- Botones CTA -->
+  <div class="cta-container">
+    <a class="cta-btn" href="./assets/retiroandre.mp4" target="_blank">📺 Ver Video</a>
+    <a class="cta-btn" href="./assets/Imagen.jpeg" target="_blank">🖼️ Ver Imagen</a>
+    <a class="cta-btn" href="./assets/retiroandre.mp4" download>⬇️ Descargar Video</a>
+    <a class="cta-btn" href="./assets/Imagen.jpeg" download>⬇️ Descargar Imagen</a>
+  </div>
 </body>
 </html>
-
-
